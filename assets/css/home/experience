@@ -1,0 +1,57 @@
+.TimelineProjectArea {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+  .TimelineProjectArea p, .TimelineProjectArea h2, .TimelineProjectArea h3 {
+    flex: 0 1 100%; }
+  .TimelineProjectArea p {
+    margin-top: 0; }
+  .TimelineProjectArea > .TimelineProjectArea-thumb {
+    cursor: pointer;
+    flex: 0 1 20%;
+    margin: 0.5em 0.5em 1.5em 0; }
+    .TimelineProjectArea > .TimelineProjectArea-thumb a {
+      border-bottom: none; }
+    .TimelineProjectArea > .TimelineProjectArea-thumb img {
+      border-radius: 100px;
+      max-width: 100%;
+      opacity: 0.6;
+      transition: opacity 0.5s ease; }
+    .TimelineProjectArea > .TimelineProjectArea-thumb:hover img {
+      opacity: 1; }
+  .TimelineProjectArea .TimelineProjectArea-details:hover + .TimelineProjectArea-thumb img {
+    opacity: 1; }
+  .TimelineProjectArea > .TimelineProjectArea-details {
+    cursor: pointer;
+    flex: 0 1 76%; }
+    .TimelineProjectArea > .TimelineProjectArea-details:last-child {
+      margin-bottom: 3.5em; }
+    .TimelineProjectArea > .TimelineProjectArea-details:hover h4 {
+      color: #000; }
+    .TimelineProjectArea > .TimelineProjectArea-details:hover date {
+      color: #666; }
+    .TimelineProjectArea > .TimelineProjectArea-details > h4 {
+      color: #666;
+      font-size: 1.2em;
+      margin: 1.2em 0 0 0; }
+    .TimelineProjectArea > .TimelineProjectArea-details > date {
+      transition: color 0.3s ease;
+      color: #aaa;
+      font-size: 1.1em;
+      margin-top: 0.4em;
+      display: block; }
+
+@media (max-width: 800px) {
+  .TimelineProjectArea {
+    flex-flow: row wrap; }
+    .TimelineProjectArea .TimelineProjectArea-thumb {
+      margin-top: 1.5em; } }
+.TimelineItem-pics.-experience--ap {
+  padding-right: 1em !important; }
+  @media (max-width: 800px) {
+    .TimelineItem-pics.-experience--ap {
+      padding-right: initial; } }
+
+body.index .TimelineItem .TimelineItem-pics {
+  padding-left: 3em;
+  padding-right: 3em; }

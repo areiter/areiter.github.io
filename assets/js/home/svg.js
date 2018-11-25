@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".Me-social").length&&["twitter","github","email","linkedin","keybase"].forEach(function(e){$("#link-"+e+" svg")})});

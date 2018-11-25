@@ -1,0 +1,128 @@
+.TimelineItem {
+  display: flex; }
+  .TimelineItem > .TimelineItem-pics {
+    flex: 1 1 30%;
+    padding: 0 2em 2em;
+    min-width: 1px;
+    text-align: center; }
+    .TimelineItem > .TimelineItem-pics img {
+      max-width: 100%; }
+    .TimelineItem > .TimelineItem-pics > img:first-child {
+      margin-top: 2em; }
+    .TimelineItem > .TimelineItem-pics.TimelineItem-pics--multi {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    .TimelineItem > .TimelineItem-pics.TimelineItem-pics--jelly > img {
+      transform: scale(0.5);
+      opacity: 0.5; }
+      .TimelineItem > .TimelineItem-pics.TimelineItem-pics--jelly > img.is-revealed {
+        opacity: 1;
+        animation: animation--jelly-bounce 1.5s linear both; }
+    .TimelineItem > .TimelineItem-pics .TimelineItem-pics-footer {
+      max-width: none;
+      align-self: flex-end;
+      justify-content: inherit;
+      margin: 6em 0 2em 0; }
+      @media (max-width: 800px) {
+        .TimelineItem > .TimelineItem-pics .TimelineItem-pics-footer {
+          display: none; } }
+  .TimelineItem > .TimelineItem-details {
+    flex: 1 1 70%;
+    padding: 2em 0 1em 3em;
+    border-left: 3px solid #ccc;
+    position: relative; }
+    .TimelineItem > .TimelineItem-details p:last-child, .TimelineItem > .TimelineItem-details ul:last-child {
+      margin-bottom: 2.5em; }
+  .TimelineItem > .TimelineItem-details::before {
+    content: '';
+    display: block;
+    width: 11px;
+    height: 11px;
+    background: #fff;
+    border-radius: 14px;
+    border: solid 3px #ccc;
+    position: absolute;
+    left: -10px;
+    margin-top: 8px; }
+  .TimelineItem > .TimelineItem-details::after {
+    content: '';
+    display: block;
+    position: relative;
+    bottom: 0;
+    height: 1px;
+    width: 40%;
+    margin: 0 auto;
+    background: #eee;
+    right: 1.5em; }
+  .TimelineItem:first-child > .TimelineItem-pics {
+    padding-top: 2em; }
+    @media (max-width: 800px) {
+      .TimelineItem:first-child > .TimelineItem-pics {
+        padding-top: 0; } }
+  .TimelineItem:first-child > .TimelineItem-details {
+    padding-top: 4em; }
+    @media (max-width: 800px) {
+      .TimelineItem:first-child > .TimelineItem-details {
+        padding-top: 2em; } }
+  .TimelineItem.TimelineItem--fadeIn, .TimelineItem.TimelineItem--header:first-child {
+    mask-image: linear-gradient(to bottom, transparent 30px, black 80px); }
+  .TimelineItem.TimelineItem--fadeIn {
+    margin-top: -2em; }
+    @media (max-width: 800px) {
+      .TimelineItem.TimelineItem--fadeIn {
+        mask-image: none; }
+        .TimelineItem.TimelineItem--fadeIn > .TimelineItem-pics {
+          mask-image: linear-gradient(to bottom, transparent 30px, black 80px); }
+        .TimelineItem.TimelineItem--fadeIn .TimelineItem-pics > img:first-child {
+          margin-top: 4em; } }
+
+.TimelineItem--topLink {
+  justify-content: flex-end; }
+  .TimelineItem--topLink > .TimelineItem-footer {
+    width: 70%;
+    text-align: center;
+    border-left: 3px solid #ccc;
+    flex-grow: 0;
+    padding-bottom: 1em; }
+    .TimelineItem--topLink > .TimelineItem-footer::before, .TimelineItem--topLink > .TimelineItem-footer::after {
+      display: none; }
+
+.TimelineItem--header {
+  text-align: center;
+  padding: 0; }
+  .TimelineItem--header .TimelineItem-details::before, .TimelineItem--header .TimelineItem-details::after {
+    display: none; }
+  .TimelineItem--header:first-child {
+    padding-top: 1.5em;
+    margin-top: -1.5em; }
+    @media (max-width: 800px) {
+      .TimelineItem--header:first-child {
+        padding-top: 2em; } }
+  .TimelineItem--header h3 {
+    font-size: 2em;
+    padding-right: 1em;
+    margin: 0; }
+    @media (max-width: 800px) {
+      .TimelineItem--header h3 {
+        font-size: 2em; } }
+
+@media (max-width: 800px) {
+  .TimelineItem {
+    flex-flow: row wrap; }
+    .TimelineItem > .TimelineItem-details {
+      flex: 1 1 100%;
+      padding: 2em 1em 1em 3em; }
+    .TimelineItem > .TimelineItem-details::after {
+      right: 1em; }
+    .TimelineItem > .TimelineItem-pics {
+      border-left: 3px solid #ccc;
+      padding-bottom: 0;
+      text-align: center; }
+      .TimelineItem > .TimelineItem-pics img {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto; }
+
+  .TimelineItem--topLink > .TimelineItem-footer {
+    width: 100%; } }

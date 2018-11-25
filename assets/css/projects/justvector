@@ -1,0 +1,36 @@
+.jv-ColorChangingIcons {
+  margin: 1em 0 2.5em -2%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+  .jv-ColorChangingIcons svg {
+    fill: #1abc9c;
+    animation-name: animation--color-changer;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    width: 6%;
+    margin: 0 3%;
+    height: 10vw;
+    max-height: 100px; }
+    .jv-ColorChangingIcons svg:nth-child(1) {
+      animation-delay: 0.2s; }
+    .jv-ColorChangingIcons svg:nth-child(2) {
+      animation-delay: 0.4s; }
+    .jv-ColorChangingIcons svg:nth-child(3) {
+      animation-delay: 0.6s; }
+    .jv-ColorChangingIcons svg:nth-child(4) {
+      animation-delay: 0.8s; }
+    .jv-ColorChangingIcons svg:nth-child(5) {
+      animation-delay: 1s; }
+    .jv-ColorChangingIcons svg:nth-child(6) {
+      animation-delay: 1.2s; }
+    .jv-ColorChangingIcons svg:nth-child(7) {
+      animation-delay: 1.4s; }
+    .jv-ColorChangingIcons svg:nth-child(8) {
+      animation-delay: 1.6s; }
+
+.ContentBody .jv-FullPreview {
+  margin: 1em 0 -1em -2%; }
+
+.jv-VersionHistory {
+  font-size: 90%; }

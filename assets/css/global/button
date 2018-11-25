@@ -1,0 +1,34 @@
+.Btn {
+  padding: 12px 16px;
+  color: #3697d2;
+  border-radius: 8px;
+  display: inline-block;
+  border: 1px solid #3697d2;
+  opacity: 0.7;
+  margin-right: 10px;
+  transition: opacity 0.3s ease;
+  outline: none; }
+  p .Btn {
+    margin-bottom: 10px; }
+  .Btn:hover {
+    opacity: 1;
+    color: #4eb0eb; }
+  .Btn.Btn--cta {
+    border-color: #40d47e; }
+    .Btn.Btn--cta, .Btn.Btn--cta:hover {
+      color: #40d47e; }
+  .Btn.Btn--large {
+    font-size: 1.1em;
+    padding: 16px 25px; }
+  .Btn.Btn--subtle, .Btn.Btn--source {
+    color: #777;
+    border-color: #777; }
+  .Btn.Btn--source {
+    background: url(/assets/images/icons/github-thick.svg) no-repeat 15px center; }
+  .Btn.Btn--rubygems {
+    background: url(/assets/images/icons/rubygems.svg) no-repeat 15px center;
+    color: #eb4e62;
+    border-color: #eb4e62; }
+  .Btn.Btn--source, .Btn.Btn--rubygems {
+    background-size: 25px;
+    padding-left: 50px; }

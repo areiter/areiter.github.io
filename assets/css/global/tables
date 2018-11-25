@@ -1,0 +1,29 @@
+.ContentBody > table {
+  margin: 1em auto;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  overflow: scroll;
+  background-color: transparent; }
+  .ContentBody > table th,
+  .ContentBody > table td {
+    color: #777;
+    font-weight: normal;
+    padding: 9px;
+    line-height: 170%;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #eee; }
+  .ContentBody > table th {
+    color: #666;
+    background-color: #eee; }
+  .ContentBody > table tbody > tr:nth-child(odd) > td {
+    background-color: #f6f6f6; }
+  .ContentBody > table thead + tbody > tr:nth-child(odd) > td {
+    background-color: transparent; }
+  .ContentBody > table thead + tbody > tr:nth-child(even) > td {
+    background-color: #f6f6f6; }
+  .ContentBody > table td:first-child, .ContentBody > table th:first-child {
+    padding-left: 1em; }
+  .ContentBody > table td:last-child, .ContentBody > table th:last-child {
+    padding-right: 1em; }

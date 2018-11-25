@@ -1,0 +1,35 @@
+.prideify-Teaser {
+  border-radius: 100px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, black 70%); }
+
+.prideify-Dropzone {
+  background: #f9f9f9;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.4em;
+  border-radius: 8px;
+  border: 1px solid #eee; }
+  .prideify-Dropzone.is-hovered {
+    border-color: #4eb0eb; }
+  .prideify-Dropzone.is-uploaded {
+    border: none;
+    background: none; }
+  .prideify-Dropzone img {
+    max-width: 100%; }
+
+.prideify-UrlEntry {
+  width: 70%;
+  display: inline-block;
+  border: none;
+  transition: border-bottom .3s ease;
+  border-bottom: 1px dashed #ccc;
+  font-size: 23px;
+  text-align: center;
+  padding: 5px;
+  margin-top: 15px;
+  outline: none; }
+  .prideify-UrlEntry:focus {
+    border-bottom: 1px dashed #4eb0eb; }
+
+.prideify-Peg {
+  margin-top: .5em; }

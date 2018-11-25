@@ -1,0 +1,114 @@
+html, body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-smoothing: subpixel-antialiased;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5 {
+  font-weight: 300; }
+
+p, ul, ol {
+  font-weight: normal;
+  color: #777;
+  font-size: 1.1em;
+  line-height: 185%; }
+  p ul, ul ul, ol ul {
+    font-size: .95em; }
+
+a {
+  color: #4eb0eb;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline;
+  border-bottom: 1px dotted #4eb0eb;
+  line-height: 130%; }
+  a:hover {
+    color: #7cc4f0;
+    border-bottom: solid 1px #7cc4f0; }
+
+aside > a, aside > a:hover {
+  border-bottom: none; }
+
+footer p:nth-child(even) {
+  margin-top: -1.5em; }
+
+h2 {
+  font-size: 2.4em;
+  margin: 0; }
+  h2 a {
+    color: #000;
+    border-bottom-color: #000;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    display: inline-block; }
+
+h3 {
+  margin-top: 0.5em;
+  font-size: 1.4em;
+  color: #aaa; }
+
+@media (max-width: 800px) {
+  h2 {
+    font-size: 2.2em; }
+
+  h3 {
+    font-size: 1.1em; } }
+blockquote {
+  margin: 30px 0;
+  font-size: 110%;
+  border-left: 3px solid #4eb0eb;
+  padding: 5px 0 5px 40px;
+  background: #fcfcfc; }
+  blockquote p, .ContentBody blockquote p {
+    color: #666;
+    margin: 20px 0; }
+
+.ContentBody h1, .Comments h1 {
+  font-size: 3em;
+  text-align: center;
+  line-height: 140%; }
+.ContentBody h2, .Comments h2 {
+  font-size: 2em;
+  margin: 1.5em 0 1em 0; }
+.ContentBody h3, .Comments h3 {
+  font-weight: normal;
+  font-size: 1.5em;
+  margin: 2em 0 1em;
+  color: #777777;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px; }
+.ContentBody h4, .Comments h4 {
+  font-size: 1.1em;
+  color: #919191;
+  font-weight: normal;
+  display: inline-block;
+  margin: 0;
+  border-bottom: 1px dotted #aaa;
+  padding-bottom: 5px; }
+.ContentBody h5, .Comments h5 {
+  font-size: 1.1em;
+  margin: 0;
+  color: #777; }
+.ContentBody strong, .Comments strong {
+  background: #ffffe0;
+  padding: 2px 4px; }
+.ContentBody a, .Comments a {
+  word-break: break-word; }
+.ContentBody h1 code, .ContentBody h2 code, .ContentBody h3 code, .ContentBody h4 code, .ContentBody h5 code, .Comments h1 code, .Comments h2 code, .Comments h3 code, .Comments h4 code, .Comments h5 code {
+  font-size: 90%; }
+.ContentBody p, .Comments p {
+  margin: 40px 0; }
+
+p.callout {
+  background: #ffffe0;
+  padding: 15px 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px; }
+  p.callout em {
+    margin-right: 5px; }
+
+p.u-centerText {
+  text-align: center; }
+
+p.u-imageCaption {
+  text-align: center;
+  font-style: italic; }
